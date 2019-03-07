@@ -5,10 +5,11 @@ import pandas as pd
 import numpy as np
 
 #importing data
-
 dataset = pd.read_csv("heart.csv")
 X = dataset.drop('target',axis = 1)
 y = dataset.iloc[:,-1].values
+
+#try feature scaling here if possible
 
 # Splitting the dataset into the Training set and Test set
 
