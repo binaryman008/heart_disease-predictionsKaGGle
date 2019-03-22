@@ -32,7 +32,6 @@ X_test = sc_X.transform(X_test)
 
 
 
-
 # Fitting Logistic Regression to the Training set
 
 from sklearn.linear_model import LogisticRegression
