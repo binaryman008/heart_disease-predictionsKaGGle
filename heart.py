@@ -16,6 +16,13 @@ from sklearn.model_selection import train_test_split
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3,random_state=109)
 
+# Applying PCA
+from sklearn.decomposition import PCA
+pca = PCA(n_components = 8)
+X_train = pca.fit_transform(X_train)
+X_test = pca.transform(X_test)
+explained_variance = pca.explained_variance_ratio_
+
 
 # Featrue scaling
 from sklearn.preprocessing import StandardScaler
